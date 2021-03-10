@@ -1,0 +1,818 @@
+@font-face {
+	font-family: "GothaProNarMed";
+	src: url("../fonts/GothaProNarMed.eot");
+	src: local("☺"), url("../fonts/GothaProNarMed.woff") format("woff"),
+		url("../fonts/GothaProNarMed.ttf") format("truetype"), url("../fonts/GothaProNarMed.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "GothaProReg";
+	src: url("../fonts/GothaProReg.eot");
+	src: local("☺"), url("../fonts/GothaProReg.woff") format("woff"), url("../fonts/GothaProReg.ttf") format("truetype"),
+		url("../fonts/GothaProReg.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1 {
+	font-family: "GothaProNarMed";
+	max-width: 633px;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 60px;
+	line-height: 120%;
+	padding-bottom: 15px;
+	text-shadow: 3px 3px 3px white;
+}
+.no-wrap {
+	white-space: nowrap;
+}
+h2 {
+	font-family: "GothaProNarMed";
+	font-size: 40px;
+}
+h3 {
+	font-size: 16px;
+	font-weight: bold;
+}
+body {
+	font-family: "GothaProReg";
+	color: #226616;
+}
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.more {
+	display: flex;
+}
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1% 30px 1% 30px;
+	background-color: white;
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+	height: 100px;
+}
+.shadow {
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+}
+.for-logo {
+	font-size: 36px;
+	font-weight: 800;
+	color: #226616;
+}
+.for-menu {
+	width: 429px;
+}
+.for-menu ul {
+	display: flex;
+}
+.for-menu li {
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.tel {
+	font-size: 18px;
+	color: #226616;
+}
+.for-icons img {
+	width: 25px;
+	height: 25px;
+}
+.basket {
+	fill: #226616;
+	width: 28px;
+	height: 30px;
+}
+.profile {
+	fill: #226616;
+	width: 28px;
+	height: 26px;
+	margin-right: 10px;
+}
+.heart {
+	fill: #226616;
+	width: 28px;
+	height: 26px;
+	margin-right: 10px;
+}
+.phone {
+	fill: #226616;
+	width: 28px;
+	height: 26px;
+	margin-right: 10px;
+}
+.basket:hover,
+.profile:hover,
+.heart:hover,
+.tel:hover,
+li:hover,
+.phone:hover {
+	fill: #980f28;
+	color: #980f28;
+}
+.main-information {
+	display: flex;
+	justify-content: space-between;
+	min-width: 100%;
+	position: relative;
+}
+
+.one__p {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	max-width: 298px;
+	padding-bottom: 15px;
+	text-shadow: 3px 3px 3px white;
+}
+.one__button {
+	background-color: #980f28;
+	line-height: 4;
+	display: inline-block;
+	width: 290px;
+	text-align: center;
+	cursor: pointer;
+}
+.invisible-first {
+	display: none;
+}
+.one__button a {
+	color: white;
+	font-weight: bold;
+}
+.one__button:hover {
+	opacity: 0.8;
+}
+.one__for-pic {
+	flex: 0 1 40%;
+	min-height: 75vh;
+}
+.one__for-pic img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	min-height: 75vh;
+}
+.one__for-slider {
+	flex: 0 1 35%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+/* Slideshow container */
+.slideshow-container {
+	position: relative;
+}
+.slideshow-container img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+/* Hide the images by default */
+.mySlides {
+	display: none;
+	width: 250px;
+	height: 350px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 100%;
+	width: auto;
+	padding: 16px;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	cursor: pointer;
+	margin: 0 2px;
+	display: block;
+	transition: red 0.6s ease;
+	margin-bottom: 30px;
+	margin-right: 10px;
+}
+
+.dot.active {
+	color: #980f28;
+}
+.dot:hover {
+	text-decoration: underline;
+}
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+#button-up {
+	display: none;
+	right: 0;
+	margin: 0;
+	position: fixed;
+	bottom: 50px;
+	outline: none;
+	width: 60px;
+	height: 60px;
+	background-color: black;
+	opacity: 0.6;
+	line-height: 30px;
+	text-decoration: none;
+	padding: 0;
+	color: white;
+	font-size: 18px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 99;
+	padding-left: 2px;
+	cursor: pointer;
+}
+.for-up {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+i {
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 4px;
+	margin-top: 4px;
+	transform: rotate(-135deg);
+}
+
+.new-in__card {
+	height: 200px;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.new-in__card__for-img:hover .overlay {
+	opacity: 0.3;
+}
+.new-in__card__for-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.new-in__card__info-in-card {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 15px;
+}
+.new-in__card__name-and-price p {
+	line-height: 1.5;
+}
+
+.for-test {
+	display: flex;
+	height: 200px;
+}
+.percent25 {
+	background-color: pink;
+	flex: 0 1 25%;
+}
+.precent50 {
+	background-color: powderblue;
+	flex: 0 1 40%;
+}
+.percent35 {
+	background-color: pink;
+	flex: 0 1 35%;
+}
+
+.one {
+	grid-area: one;
+	z-index: 2;
+	position: relative;
+	left: 200px;
+	margin-left: -200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.two {
+	grid-area: two;
+}
+.three {
+	grid-area: three;
+}
+.four {
+	grid-area: four;
+}
+.five {
+	grid-area: five;
+	position: relative;
+}
+.six {
+	grid-area: six;
+	position: relative;
+}
+.seven {
+	grid-area: seven;
+	position: relative;
+}
+.eight {
+	grid-area: eight;
+	position: relative;
+	/* width: 100%; */
+}
+.nine {
+	grid-area: nine;
+	position: relative;
+}
+.ten {
+	grid-area: ten;
+	position: relative;
+}
+.eleven {
+	grid-area: eleven;
+	height: 250px;
+	background-image: url(../img/b65c31e807c18507c09318e50f203f79.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	position: relative;
+}
+.twelve {
+	grid-area: twelve;
+	background-image: url(../img/Lirika-2_1529086364-1500x1200.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	position: relative;
+}
+.thirteen {
+	grid-area: thirteen;
+	background-image: url(../img/erika-2_1529090848-1500x1200.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	position: relative;
+}
+.fourteen {
+	grid-area: fourteen;
+	height: 250px;
+	background-image: url(../img/9dbb7d9423f7a940db08db5583c8fceb.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	position: relative;
+}
+.fiveteen {
+	grid-area: fiveteen;
+	background-image: url(../img/3.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	position: relative;
+}
+.subgrid {
+	grid-area: subgrid;
+	margin-top: 70px;
+}
+.overlay {
+	opacity: 0;
+	background-color: black;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	transition: 0.3s ease;
+}
+.subgrid a:hover .overlay {
+	opacity: 0.3;
+}
+.sixteen {
+	grid-area: sixteen;
+}
+.seventeen {
+	grid-area: seventeen;
+}
+.eighteen {
+	grid-area: eighteen;
+}
+.nineteen {
+	grid-area: nineteen;
+}
+.twenty {
+	grid-area: twenty;
+}
+.twenty-one {
+	grid-area: twenty-one;
+}
+.twenty-two {
+	grid-area: twenty-two;
+}
+
+.grid {
+	margin-top: 100px;
+	display: grid;
+	grid-gap: 20px;
+	grid-row-gap: 100px;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas:
+		"one one one two two two two two three three three three"
+		"four four four five five five six six six seven seven seven"
+		"four four four eight eight eight nine nine nine ten ten ten"
+		"subgrid subgrid subgrid subgrid subgrid subgrid subgrid subgrid subgrid subgrid subgrid subgrid"
+		"sixteen sixteen sixteen seventeen seventeen seventeen eighteen eighteen eighteen nineteen nineteen nineteen"
+		"sixteen sixteen sixteen twenty twenty twenty twenty-one twenty-one twenty-one twenty-two twenty-two twenty-two";
+}
+.subgrid {
+	display: grid;
+	grid-gap: 20px;
+	grid-row-gap: 20px;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas:
+		"eleven eleven eleven twelve twelve twelve twelve twelve thirteen thirteen thirteen thirteen"
+		"fourteen fourteen fourteen fourteen fourteen fiveteen fiveteen fiveteen thirteen thirteen thirteen thirteen";
+}
+.subgrid a {
+	color: white;
+	padding-left: 20px;
+	padding-top: 10px;
+	line-height: 1.5;
+}
+
+.about-mobel {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.about-mobel h2 {
+	padding-bottom: 80px;
+}
+.text-pic {
+	display: flex;
+}
+.text {
+	flex: 0 1 60%;
+	padding-right: 30px;
+}
+.text p {
+	padding-bottom: 20px;
+	line-height: 1.5;
+	font-size: 15px;
+}
+.text span {
+	font-weight: bolder;
+	line-height: 2;
+}
+.pic {
+	flex: 0 1 40%;
+	height: 400px;
+}
+.pic img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.shipping {
+	margin-top: 100px;
+}
+.shipping h2 {
+	padding-bottom: 80px;
+}
+.for-text {
+	display: flex;
+}
+.shipping__first {
+	flex: 0 1 50%;
+	padding-right: 15px;
+}
+.shipping__second {
+	flex: 0 1 50%;
+	padding-left: 15px;
+}
+.underline {
+	text-decoration: underline;
+}
+footer {
+	font-size: 12px;
+	line-height: 1.5;
+}
+.footer {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 100px;
+}
+.footer span {
+	font-size: 16px;
+	font-weight: bold;
+}
+.furniture,
+.rights {
+	flex: 0 1 20%;
+}
+.furniture p {
+	padding-bottom: 30px;
+}
+.logo-in-footer {
+	font-size: 30px;
+	font-weight: 800;
+	padding-bottom: 20px;
+}
+.cards {
+	display: flex;
+}
+.cards img,
+.cards2 img {
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.cards2 {
+	display: flex;
+}
+.categories {
+	flex: 0 1 15%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.for-text-accordion {
+	display: none;
+}
+
+
+/* Стиль кнопок, которые используются, чтобы открыть и закрыть панель аккордеона */
+.accordion {
+  background-color: #eee;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Добавьте цвет фона к кнопке, если она нажата (добавьте класс .active с помощью JS) и при наведении на нее указателя мыши (наведите курсор мыши) */
+.accordion.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Стиль панели аккордеона. Примечание: по умолчанию скрыто */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: "+"; /* Unicode символ для "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+  border: none;
+}
+
+.accordion.active:after {
+  content: "-"; /* Unicode character for "minus" sign (-) */
+}
+
+
+@media (max-width: 1400px) {
+	h1 {
+		font-size: calc(25px + 35 * ((100vw - 320px) / (1440 - 320)));
+	}
+	h2 {
+		font-size: calc(20px + 20 * ((100vw - 320px) / (1440 - 320)));
+	}
+	.new-in__card {
+		height: calc(120px + 80 * ((100vw - 320px) / (1440 - 320)));
+	}
+	.subgrid a {
+		height: calc(150px + 100 * ((100vw - 320px) / (1440 - 320)));
+	}
+	a.thirteen {
+		height: auto;
+	}
+	.grid {
+		grid-row-gap: calc(50px + 50 * ((100vw - 320px) / (1440 - 320)));
+	}
+	.about-mobel h2, .shipping h2, .contact-us h2{
+		padding-bottom: calc(40px + 40 * ((100vw - 320px) / (1440 - 320)));
+	}
+	.about-mobel {
+		margin-bottom: calc(50px + 50 * ((100vw - 320px) / (1440 - 320)));
+		margin-top: calc(50px + 50 * ((100vw - 320px) / (1440 - 320)));
+	}
+	.shipping {
+    margin-top: calc(50px + 50 * ((100vw - 320px) / (1440 - 320)));
+	
+}
+.footer {
+	margin-bottom: calc(50px + 50 * ((100vw - 320px) / (1440 - 320)));
+}
+}
+@media (max-width: 1100px) {
+	.three {
+		flex-direction: column;
+	}
+	.one__for-slider {
+    flex: 0 1 35%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+}
+@media (max-width: 900px) {
+	.mySlides {
+    display: none;
+    width: 200px;
+    height: 290px;
+}
+}
+@media (max-width: 767px) {
+	.three {
+		display: none;
+	}
+	.grid {
+		grid-template-areas:
+			"one one one one one two two two two two two two"
+			"four four four four four four four four four four four four"
+			" five five five five six six six six seven seven seven seven"
+			"eight eight eight eight nine nine nine nine ten ten ten ten"
+			"subgrid subgrid subgrid subgrid subgrid subgrid subgrid subgrid subgrid subgrid subgrid subgrid"
+			"sixteen sixteen sixteen sixteen sixteen sixteen sixteen sixteen sixteen sixteen sixteen sixteen"
+			"seventeen seventeen seventeen seventeen eighteen eighteen eighteen eighteen nineteen nineteen nineteen nineteen"
+			"twenty twenty twenty twenty twenty-one twenty-one twenty-one twenty-one twenty-two twenty-two twenty-two twenty-two";
+	}
+	.text-pic {
+		flex-direction: column;
+	}
+	.pic {
+		height: 30vh;
+	}
+	.for-text {
+		display: none;
+	}
+	.for-text-accordion {
+		display: block;
+		padding-right: 0;
+	}
+	.shipping__second {
+		padding: 0;
+	}
+	.contact-us img {
+		display: none;
+	}
+	.text {
+		padding-right: 0;
+	}
+	.categories-categories {
+		display: none;
+	}
+	.categories-map {
+		display: none;
+	}
+	.categories-profile {
+		display: none;
+	}
+	.categories {
+		flex: 0 1 40%;
+	}
+	.categories-profile {
+		flex: 0 1 20%;
+	}
+	.rights {
+		flex: 0 1 40%;
+		display: inline-flex;
+	}
+}
+@media (max-width: 600px) {
+	.grid {
+		grid-row-gap: 50px;
+		grid-template-areas:
+			"one one one one one two two two two two two two"
+			"four four four four four four four four four four four four"
+			" five five five five five five six six six six six six"
+			"seven seven seven seven seven seven eight eight eight eight eight eight"
+			"nine nine nine nine nine nine ten ten ten ten ten ten"
+			"subgrid subgrid subgrid subgrid subgrid subgrid subgrid subgrid subgrid subgrid subgrid subgrid"
+			"sixteen sixteen sixteen sixteen sixteen sixteen sixteen sixteen sixteen sixteen sixteen sixteen"
+			"seventeen seventeen seventeen seventeen seventeen seventeen eighteen eighteen eighteen eighteen eighteen eighteen"
+			"nineteen nineteen nineteen nineteen nineteen nineteen twenty twenty twenty twenty twenty twenty"
+			" twenty-one twenty-one twenty-one twenty-one twenty-one twenty-one twenty-two twenty-two twenty-two twenty-two twenty-two twenty-two";
+	}
+	.subgrid {
+		grid-template-areas:
+			"eleven eleven eleven eleven eleven eleven twelve twelve twelve twelve twelve twelve"
+			"fourteen fourteen fourteen fourteen fourteen fourteen fiveteen fiveteen fiveteen fiveteen fiveteen fiveteen"
+			"thirteen thirteen thirteen thirteen thirteen thirteen thirteen thirteen thirteen thirteen thirteen thirteen";
+	}
+	.subgrid a {
+		height: calc(150px + 100 * ((100vw - 320px) / (1440 - 320)));
+	}
+	.phone {
+		display: inline-block;
+	}
+	.for-tel {
+		display: none;
+	}
+	.for-logo {
+		font-size: 26px;
+	}
+	.one__for-main {
+		background-size: cover;
+	}
+	.footer {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 424px) {
+	.subgrid {
+		grid-template-areas:
+			"eleven eleven eleven eleven eleven eleven eleven eleven eleven eleven eleven eleven"
+			"twelve twelve twelve twelve twelve twelve twelve twelve twelve twelve twelve twelve"
+			"fourteen fourteen fourteen fourteen fourteen fourteen fourteen fourteen fourteen fourteen fourteen fourteen"
+			"fiveteen fiveteen fiveteen fiveteen fiveteen fiveteen fiveteen fiveteen fiveteen fiveteen fiveteen fiveteen"
+			"thirteen thirteen thirteen thirteen thirteen thirteen thirteen thirteen thirteen thirteen thirteen thirteen";
+	}
+	/* .eleven,
+	.twelve,
+	.fourteen,
+	.fiveteen,
+	.thirteen {
+		height: 120px;
+	} */
+}
+@media (max-width: 374px) {
+	.for-icons {
+		display: none;
+	}
+	.invisible-first {
+		display: inline;
+	}
+}
